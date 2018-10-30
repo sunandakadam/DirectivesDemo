@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'directives-structural';
+  heroes=["Khiladi","Badshah","Shahenshah","Sultan"];
+  i:number=0;
+  toggled:boolean=true;
+  selected:string;
+  toggle(){
+    this.toggled=!this.toggled;
+  }
+
+  select(hero){
+    this.selected=hero;
+  }
 }
